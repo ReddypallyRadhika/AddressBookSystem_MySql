@@ -1,10 +1,10 @@
 package com.bridgeLabz;
 
-/**UC7
- * Ability to understand
- * the size of address
- * book by City and State
- * - Here size indicates the count
+/**UC8
+ * Ability to retrieve entries
+ * sorted alphabetically by
+ * Person’s name for a
+ * given city
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -27,6 +27,8 @@ public class AddressBook {
         select * from contact_person where city='Hyderabad';
         select count(city) from contact_person where state='TS';
         select count(state) from contact_person;
+        select * from contact_person order by  city asc;
+        select * from contact_person where city='Hyderabad' order by  firstName asc;
 
 
          */
