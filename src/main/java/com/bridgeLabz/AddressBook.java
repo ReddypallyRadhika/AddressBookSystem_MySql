@@ -1,9 +1,10 @@
 package com.bridgeLabz;
 
-/**UC5
- * Ability to delete a
- * person using person's
- * name
+/**UC6
+ * Ability to Retrieve
+ * Person belonging to
+ * a City or State from
+ * the Address Book
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -22,6 +23,10 @@ public class AddressBook {
               ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com');
         update contact_person set firstName='Harsha' where firstName='Bhuvanesh';
         delete from contact_person where firstName='raj';
+        select count(city) from contact_person where state='TS';
+        select count(state) from contact_person;
+        select * from contact_person order by  city='Hyderabad' asc;
+
          */
     }
 }
