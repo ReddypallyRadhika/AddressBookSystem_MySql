@@ -1,9 +1,9 @@
 package com.bridgeLabz;
 
-/**UC4
- * Ability to edit
- * existing contact
- * person using their name
+/**UC5
+ * Ability to delete a
+ * person using person's
+ * name
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -21,6 +21,7 @@ public class AddressBook {
               ('raj','kumar','Jeedimetla','Kurnool','AP','54','2345612345','raju@gmail.com'),
               ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com');
         update contact_person set firstName='Harsha' where firstName='Bhuvanesh';
+        delete from contact_person where firstName='raj';
          */
     }
 }
