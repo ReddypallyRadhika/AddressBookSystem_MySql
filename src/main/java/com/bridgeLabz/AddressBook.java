@@ -1,10 +1,11 @@
 package com.bridgeLabz;
 
-/**UC8
- * Ability to retrieve entries
- * sorted alphabetically by
- * Person’s name for a
- * given city
+/**UC9
+ * Ability to identify each
+ * Address Book with name and
+ * Type. - Here the type could Family, Friends,
+ * Profession, etc
+ * - Alter Address Book to add name and
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -29,7 +30,8 @@ public class AddressBook {
         select count(state) from contact_person;
         select * from contact_person order by  city asc;
         select * from contact_person where city='Hyderabad' order by  firstName asc;
-
+        alter table contact_person add addressBookName varchar(25),add type varchar(25);
+        select * from contact_person;
 
          */
     }
