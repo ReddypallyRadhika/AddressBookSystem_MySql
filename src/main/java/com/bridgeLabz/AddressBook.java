@@ -1,11 +1,9 @@
 package com.bridgeLabz;
 
-/**UC9
- * Ability to identify each
- * Address Book with name and
- * Type. - Here the type could Family, Friends,
- * Profession, etc
- * - Alter Address Book to add name and
+/**UC10
+ * Ability to get number
+ * of contact persons
+ * i.e. count by type
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -32,6 +30,14 @@ public class AddressBook {
         select * from contact_person where city='Hyderabad' order by  firstName asc;
         alter table contact_person add addressBookName varchar(25),add type varchar(25);
         select * from contact_person;
+        alter table contact_person drop primary key;
+        alter table contact_person add id int auto_increment primary key;
+        update contact_person set type = 'family' where id='1';
+        update contact_person set type ='friend' where id='2';
+        select count(type) from contact_person;
+        select count(type) from contact_person where type ='friend';
+        alter table contact_person drop column id;
+        alter table contact_person add id int auto_increment primary key first;
 
          */
     }
