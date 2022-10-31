@@ -1,16 +1,11 @@
 package com.bridgeLabz;
 
-/**UC12
- * Draw the ER Diagram for
- Address Book Service DB
-
- - Identifies the Entities – Entities
- can be Identified using
- Normalization Technique
- - Check each attribute and see if
-
- they are Composite or Multi-
- Valued
+/**UC13
+ * Ensure all retrieve
+ * queries done especially
+ * in UC 6, UC 7, UC 8 and
+ * UC 10 are working with
+ * new table structure
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -49,7 +44,13 @@ public class AddressBook {
         values('Bhuvanesh','sagar','kompally','Hyderabad','TS','500055','9391332668','bhuvanesh@gmail.com','a1','family'),
               ('raj','kumar','Jeedimetla','Kurnool','AP','54','2345612345','raju@gmail.com','a2','friend'),
               ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com','a1','family');
-         describe  contact_person;
+        describe  contact_person;
+        create table address_book_name(id int auto_increment,bookName varchar(25) not null,primary key(id));
+        insert into address_book_name(bookName) values('a1'),('a2'),('a3');
+        select * from address_book_name;
+        select bookName from address_book_name where id='1';
+        select count(bookName) from address_book_name where id=1;
+        select count(bookName) from address_book_name;
 
          */
     }
