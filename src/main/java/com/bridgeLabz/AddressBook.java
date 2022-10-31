@@ -1,10 +1,10 @@
 package com.bridgeLabz;
 
-/**UC6
- * Ability to Retrieve
- * Person belonging to
- * a City or State from
- * the Address Book
+/**UC7
+ * Ability to understand
+ * the size of address
+ * book by City and State
+ * - Here size indicates the count
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -23,9 +23,11 @@ public class AddressBook {
               ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com');
         update contact_person set firstName='Harsha' where firstName='Bhuvanesh';
         delete from contact_person where firstName='raj';
+        select * from contact_person where state='TS';
+        select * from contact_person where city='Hyderabad';
         select count(city) from contact_person where state='TS';
         select count(state) from contact_person;
-        select * from contact_person order by  city='Hyderabad' asc;
+
 
          */
     }
