@@ -1,11 +1,9 @@
 package com.bridgeLabz;
 
-/**UC2
- * Ability to create a Address
- * Book Table with first and
- * last names, address, city,
- * state, zip, phone number
- * and email as its attributes
+/**UC3
+ * Ability to insert new
+ * Contacts to Address
+ * Book
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -18,6 +16,11 @@ public class AddressBook {
         city varchar(255) Not Null,state  varchar(255) Not Null,zip  varchar(255) Not Null,PhoneNumber varchar(255) Not Null,email  varchar(255) Not Null,primary key (firstName));
         alter table addressbook rename to contact_person;
         select * from contact_person;
+        insert into contact_person (firstName,lastName,address,city,state,zip,PhoneNumber,email)
+        values('Bhuvanesh','sagar','kompally','Hyderabad','TS','500055','9391332668','bhuvanesh@gmail.com'),
+              ('raj','kumar','Jeedimetla','Kurnool','AP','54','2345612345','raju@gmail.com'),
+              ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com');
+
          */
     }
 }
