@@ -1,9 +1,9 @@
 package com.bridgeLabz;
 
-/**UC3
- * Ability to insert new
- * Contacts to Address
- * Book
+/**UC4
+ * Ability to edit
+ * existing contact
+ * person using their name
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class AddressBook {
         values('Bhuvanesh','sagar','kompally','Hyderabad','TS','500055','9391332668','bhuvanesh@gmail.com'),
               ('raj','kumar','Jeedimetla','Kurnool','AP','54','2345612345','raju@gmail.com'),
               ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com');
-
+        update contact_person set firstName='Harsha' where firstName='Bhuvanesh';
          */
     }
 }
