@@ -1,9 +1,9 @@
 package com.bridgeLabz;
 
-/**UC10
- * Ability to get number
- * of contact persons
- * i.e. count by type
+/**UC11
+ * Ability to add person
+ * to both Friend and
+ * Family
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -38,6 +38,11 @@ public class AddressBook {
         select count(type) from contact_person where type ='friend';
         alter table contact_person drop column id;
         alter table contact_person add id int auto_increment primary key first;
+        insert into contact_person (firstName,lastName,address,city,state,zip,PhoneNumber,email,addressBookName,type)
+        values('Bhuvanesh','sagar','kompally','Hyderabad','TS','500055','9391332668','bhuvanesh@gmail.com','a1','family'),
+              ('raj','kumar','Jeedimetla','Kurnool','AP','54','2345612345','raju@gmail.com','a2','friend'),
+              ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com','a1','family');
+
 
          */
     }
