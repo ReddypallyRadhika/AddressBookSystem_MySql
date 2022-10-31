@@ -1,9 +1,16 @@
 package com.bridgeLabz;
 
-/**UC11
- * Ability to add person
- * to both Friend and
- * Family
+/**UC12
+ * Draw the ER Diagram for
+ Address Book Service DB
+
+ - Identifies the Entities – Entities
+ can be Identified using
+ Normalization Technique
+ - Check each attribute and see if
+
+ they are Composite or Multi-
+ Valued
  */
 public class AddressBook {
     public static void main(String[] args) {
@@ -42,7 +49,7 @@ public class AddressBook {
         values('Bhuvanesh','sagar','kompally','Hyderabad','TS','500055','9391332668','bhuvanesh@gmail.com','a1','family'),
               ('raj','kumar','Jeedimetla','Kurnool','AP','54','2345612345','raju@gmail.com','a2','friend'),
               ('Radhika','sagar','secundrabad','secundrabad','TS','500054','773082683','radhika@gmail.com','a1','family');
-
+         describe  contact_person;
 
          */
     }
